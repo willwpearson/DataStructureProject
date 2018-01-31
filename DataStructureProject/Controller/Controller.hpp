@@ -18,5 +18,4 @@ class Controller
 public:
     void start();
 };
-
 #endif /* Controller_hpp */
