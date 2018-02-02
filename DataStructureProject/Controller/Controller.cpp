@@ -48,8 +48,7 @@ void Controller :: findMaxandMin()
         {
             minIndex = index;
         }
-        
-        if (myData [maxIndex] < myData [index])
+        else if (myData [maxIndex] < myData [index])
         {
             maxIndex = index;
         }
