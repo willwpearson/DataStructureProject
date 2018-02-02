@@ -6,13 +6,14 @@
 //  Copyright © 2018 CTEC. All rights reserved.
 //
 
-#ifndef Array_hpp
-#define Array_hpp
 
 #include <assert.h> //Used for validating user supplied data.
 #include <iostream> //Used for tracing and debug statements.
 
 using namespace std; //Used for keyword access.
+
+#ifndef Array_hpp
+#define Array_hpp
 
 template <class Type>
 class Array
@@ -55,7 +56,7 @@ Array<Type> :: Array(const Array<Type> & toCopy)
     this->size = toCopy.getSize();
     
     //Build Data Structure
-    internalArray = new Type[size]
+    internalArray = new Type[size];
     
     for(int index = 0; index < size; index++)
     {
@@ -90,6 +91,7 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
     return *this;
 }
 
+//Left hand side of =, reference operator allows to assign into that reference.
 template <class Type>
 Type & Array<Type> :: operator [] (int index)
 {
@@ -97,6 +99,7 @@ Type & Array<Type> :: operator [] (int index)
     return internalArray[index];
 }
 
+//Right hand side of =, Gets a copy.
 template <class Type>
 Type Array<Type> :: operator [] (int index) const
 {

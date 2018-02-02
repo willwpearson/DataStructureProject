@@ -31,6 +31,8 @@ void Controller :: start()
 //    codeTimer.displayInformation();
     
     findMaxandMin();
+    
+    testArray();
 }
 
 void Controller :: findMaxandMin()
@@ -57,4 +59,15 @@ void Controller :: findMaxandMin()
     cout << "The smallest Crime stat is at " << minIndex << " and it is: " << myData[minIndex] << endl;
     cout << "The largest Crime stat is at " << maxIndex << " and it is: " << myData[maxIndex] << endl;
     searchTimer.displayInformation();
+}
+
+void Controller :: testArray()
+{
+    Array<int> codyArray(45);
+    
+    for(int i = 0; i < codyArray.getSize(); i ++)
+    {
+        codyArray[i] = i;
+        cout << codyArray[i] << endl;
+    }
 }
