@@ -36,3 +36,11 @@ void ArrayTester :: testArrayUse()
     thirdArray[5] = 123;
     cout << thirdArray[5] << endl;
 }
+
+void ArrayTester :: testAdvancedArray()
+{
+    vector<CrimeData> test = FileController :: readCrimeDataToVector("/Users/wpea1865/Documents/C++ Projects/DataStructureProject/DataStructureProject/Data/crime.csv");
+    int arraySize = test.size();
+}
+
+
