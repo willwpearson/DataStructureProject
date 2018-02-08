@@ -66,7 +66,8 @@
 /+ addAtIndex(int, Type) : void/
 /+ getFromIndex(int) : Type/
 /+ remove(int) : Type/
-/+ getSize() : int/
+
+/+ getSize() const : int/
 /+ getFront() : LinearNode&lt;Type&gt; */
 /+ getEnd() : LinearNode&lt;Type&gt; */</panel_attributes>
     <additional_attributes/>
