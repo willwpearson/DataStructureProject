@@ -11,13 +11,13 @@
     </coordinates>
     <panel_attributes>DataStructureProject.model.Structures :: Node
 --
-# Type data
+# data : Type
 --
 
-+ Node()
-+ Node(Type data)
-+ void setData(Type data)
-+ Type getData()</panel_attributes>
++ Node()  : constructor
++ Node(Type data) : constructor
++ setData(Type data) : void
++ getData() : Type</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -30,13 +30,13 @@
     </coordinates>
     <panel_attributes>DataStructureProject.model.Structures :: LinearNode
 --
-# LinearNode&lt;Type&gt; * next
+# LinearNode&lt;Type&gt; * : next
 --
-+ LinearNode()
-+ LinearNode(Type data)
-+ LinearNode(Type data, LinearNode&lt;Type&gt; * next)
-+ void setNextNode(LinearNode&lt;Type&gt; * next)
-+ LinearNode&lt;Type&gt; * getNextNode()</panel_attributes>
++ LinearNode() : constructor
++ LinearNode(Type data) : constructor
++ LinearNode(Type data, LinearNode&lt;Type&gt; * next) : constructor
++ setNextNode(LinearNode&lt;Type&gt; * next) : void
++ getNextNode() : LinearNode&lt;Type&gt; * </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -47,7 +47,7 @@
       <w>140</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
   </element>
 </diagram>
