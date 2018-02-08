@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>270</y>
+      <w>410</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>DataStructureProject.model.Structures :: Node
+--
+# Type data
+--
+
++ Node()
++ Node(Type data)
++ void setData(Type data)
++ Type getData()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>270</y>
+      <w>410</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>DataStructureProject.model.Structures :: LinearNode
+--
+# LinearNode&lt;Type&gt; * next
+--
++ LinearNode()
++ LinearNode(Type data)
++ LinearNode(Type data, LinearNode&lt;Type&gt; * next)
++ void setNextNode(LinearNode&lt;Type&gt; * next)
++ LinearNode&lt;Type&gt; * getNextNode()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>350</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+</diagram>
