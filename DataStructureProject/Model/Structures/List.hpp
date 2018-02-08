@@ -11,7 +11,8 @@
 
 #include <assert.h>
 #include "../../Nodes/LinearNode.hpp"
-
+ 
+template <class Type>
 class List
 {
 protected:
@@ -27,6 +28,5 @@ public:
     virtual LinearNode<Type> * getFront() = 0;
     virtual LinearNode<Type> * getEnd() = 0;
 };
-
 
 #endif /* List_hpp */
