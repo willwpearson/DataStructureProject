@@ -25,7 +25,7 @@ public:
     //Methods
     void setNextNode(LinearNode<Type> * next);
     LinearNode<Type> * getNextNode();
-}
+};
 
 //Constructors
 
