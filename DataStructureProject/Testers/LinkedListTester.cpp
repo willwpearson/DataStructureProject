@@ -36,7 +36,7 @@ void LinkedListTester :: testListBasics()
     numbers.addAtIndex(0,2312);
     
     cout << numbers.getFront()->getData() << " Is at the front of the list and should be 2312" << endl;
-    cout << numbers.getEnd()->getData() << " is at the ned of the list and should be 32567" << endl;
+    cout << numbers.getEnd()->getData() << " is at the end of the list and should be 32567" << endl;
     
     //String List
     LinkedList<string> words;
@@ -64,7 +64,7 @@ void LinkedListTester :: testListBasics()
     words.addAtIndex(0,"Aloha");
     
     cout << words.getFront()->getData() << " Is at the front of the list and should be Aloha" << endl;
-    cout << words.getEnd()->getData() << " is at the ned of the list and should be Ni hao" << endl;
+    cout << words.getEnd()->getData() << " is at the end of the list and should be Ni hao" << endl;
 }
 
 void LinkedListTester :: testListWithData()
