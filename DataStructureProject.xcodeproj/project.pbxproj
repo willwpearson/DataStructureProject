@@ -13,6 +13,7 @@
 		7AD13D33202246E000E3DDB4 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AD13D31202246E000E3DDB4 /* Timer.cpp */; };
 		7AD13D3720224D1C00E3DDB4 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AD13D3520224D1C00E3DDB4 /* CrimeData.cpp */; };
 		7AD13D3B20224DD300E3DDB4 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AD13D3920224DD300E3DDB4 /* FileController.cpp */; };
+		7AE38D3F203CAEC1001CE0A8 /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AE38D3D203CAEC1001CE0A8 /* LinkedListTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,8 @@
 		7AD13D3920224DD300E3DDB4 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		7AD13D3A20224DD300E3DDB4 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 		7AE38D3B203CA0C2001CE0A8 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		7AE38D3D203CAEC1001CE0A8 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
+		7AE38D3E203CAEC1001CE0A8 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 			children = (
 				7A1E8459202A33A6007B6444 /* ArrayTester.cpp */,
 				7A1E845A202A33A6007B6444 /* ArrayTester.hpp */,
+				7AE38D3D203CAEC1001CE0A8 /* LinkedListTester.cpp */,
+				7AE38D3E203CAEC1001CE0A8 /* LinkedListTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				7AD13D33202246E000E3DDB4 /* Timer.cpp in Sources */,
 				7AD13D3B20224DD300E3DDB4 /* FileController.cpp in Sources */,
 				7AD13D2E202243D200E3DDB4 /* Runner.cpp in Sources */,
+				7AE38D3F203CAEC1001CE0A8 /* LinkedListTester.cpp in Sources */,
 				7A1E845B202A33A6007B6444 /* ArrayTester.cpp in Sources */,
 				7AD13D2C202243BF00E3DDB4 /* Controller.cpp in Sources */,
 			);
