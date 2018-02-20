@@ -81,8 +81,8 @@
 		7A2CE0372024ED91003186DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7A1E845C202A41B0007B6444 /* Nodes */,
 				7A2CE0382024EDB8003186DE /* Structures */,
+				7A1E845C202A41B0007B6444 /* Nodes */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,9 +90,9 @@
 		7A2CE0382024EDB8003186DE /* Structures */ = {
 			isa = PBXGroup;
 			children = (
+				7AE38D3C203CA6C0001CE0A8 /* Linear */,
 				7A2CE03A2024EE4D003186DE /* Array.hpp */,
 				7A5F85A3202CE16C00C71FB0 /* List.hpp */,
-				7AE38D3B203CA0C2001CE0A8 /* LinkedList.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -155,6 +155,14 @@
 				7AD13D3620224D1C00E3DDB4 /* CrimeData.hpp */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		7AE38D3C203CA6C0001CE0A8 /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				7AE38D3B203CA0C2001CE0A8 /* LinkedList.hpp */,
+			);
+			path = Linear;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
