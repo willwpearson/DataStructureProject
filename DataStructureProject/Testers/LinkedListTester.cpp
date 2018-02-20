@@ -10,6 +10,7 @@
 
 void LinkedListTester :: testListBasics()
 {
+    //Int List
     LinkedList<int> numbers;
     numbers.add(9);
     cout << numbers.getFront()->getData() << " Is at the front of the list and should be 9" << endl;
@@ -36,6 +37,34 @@ void LinkedListTester :: testListBasics()
     
     cout << numbers.getFront()->getData() << " Is at the front of the list and should be 2312" << endl;
     cout << numbers.getEnd()->getData() << " is at the ned of the list and should be 32567" << endl;
+    
+    //String List
+    LinkedList<string> words;
+    words.add("Hello");
+    cout << words.getFront()->getData() << " Is at the front of the list and should be Hello" << endl;
+    cout << words.getEnd()->getData() << " Is at the end of the list and should be Hello" << endl;
+    
+    words.add("Greetings");
+    cout << words.getFront()->getData() << " Is at the front of the list and should be Hello" << endl;
+    cout << words.getEnd()->getData() << " is at the end of the list and should be Greetings" << endl;
+    
+    words.addAtIndex(1,"Hola");
+    words.add("Bonjour");
+    cout << words.getFront()->getData() << " Is at the front of the list and should be Hello" << endl;
+    cout << words.getEnd()->getData() << " is at the end of the list and should be Bonjour" << endl;
+    
+    cout << "This loop should print 4 lines" << endl;
+    for(int index = 0; index < words.getSize(); index++)
+    {
+        cout << words.getFromIndex(index) << endl;
+    }
+    
+    words.remove(0);
+    words.add("Ni hao");
+    words.addAtIndex(0,"Aloha");
+    
+    cout << words.getFront()->getData() << " Is at the front of the list and should be Aloha" << endl;
+    cout << words.getEnd()->getData() << " is at the ned of the list and should be Ni hao" << endl;
 }
 
 void LinkedListTester :: testListWithData()
