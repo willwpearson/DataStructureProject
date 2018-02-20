@@ -121,7 +121,7 @@ Type LinkedList<Type> :: getFromIndex(int index)
         current = current->getNextNode();
     }
     
-    data = current->getData()
+    data = current->getData();
     
     return data;
 }
