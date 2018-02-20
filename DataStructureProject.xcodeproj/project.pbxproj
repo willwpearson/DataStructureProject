@@ -46,6 +46,7 @@
 		7AD13D3820224D5700E3DDB4 /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		7AD13D3920224DD300E3DDB4 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		7AD13D3A20224DD300E3DDB4 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
+		7AE38D3B203CA0C2001CE0A8 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 			children = (
 				7A2CE03A2024EE4D003186DE /* Array.hpp */,
 				7A5F85A3202CE16C00C71FB0 /* List.hpp */,
+				7AE38D3B203CA0C2001CE0A8 /* LinkedList.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
