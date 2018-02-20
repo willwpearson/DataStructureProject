@@ -7,3 +7,9 @@
 //
 
 #include "LinkedListTester.hpp"
+
+void LinkedListTester :: testListBasics()
+{
+    LinkedList<int> numbesrs;
+    numbers.add(9);
+}
