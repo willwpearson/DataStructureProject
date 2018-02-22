@@ -36,6 +36,7 @@
 		7A2CE03A2024EE4D003186DE /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		7A5F85A2202CD72A00C71FB0 /* Node UML.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Node UML.uxf"; sourceTree = SOURCE_ROOT; };
 		7A5F85A3202CE16C00C71FB0 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		7AA67266203F48ED00BD241A /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		7AD13D1F2022434900E3DDB4 /* DataStructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD13D2A202243BF00E3DDB4 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		7AD13D2B202243BF00E3DDB4 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -174,6 +175,7 @@
 				7A2CE03A2024EE4D003186DE /* Array.hpp */,
 				7A5F85A3202CE16C00C71FB0 /* List.hpp */,
 				7AE38D3B203CA0C2001CE0A8 /* LinkedList.hpp */,
+				7AA67266203F48ED00BD241A /* Stack.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
