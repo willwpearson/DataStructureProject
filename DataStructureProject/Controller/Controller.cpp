@@ -37,9 +37,14 @@ void Controller :: start()
 //    myTest.testArrayUse();
 //    myTest.testAdvancedArray();
     
-    LinkedListTester linkedTest;
-    linkedTest.testListBasics();
-    linkedTest.testListWithData();
+//    LinkedListTester linkedTest;
+//    linkedTest.testListBasics();
+//    linkedTest.testListWithData();
+    
+    TestingStacksAndQueues versusTest;
+    versusTest.stackVersusList();
+    versusTest.stackVersusQueue();
+    versusTest.queueVersusList();
 }
 
 void Controller :: findMaxandMin()
