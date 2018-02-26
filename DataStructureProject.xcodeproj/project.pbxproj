@@ -36,6 +36,7 @@
 		7A2CE03A2024EE4D003186DE /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		7A5F85A2202CD72A00C71FB0 /* Node UML.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Node UML.uxf"; sourceTree = SOURCE_ROOT; };
 		7A5F85A3202CE16C00C71FB0 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		7A91FB8820448EF80006B5EF /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		7AA67266203F48ED00BD241A /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		7AA67267203F4E0000BD241A /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		7AD13D1F2022434900E3DDB4 /* DataStructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +82,7 @@
 			children = (
 				7A1E845D202A41CA007B6444 /* Node.hpp */,
 				7A1E845E202A43C2007B6444 /* LinearNode.hpp */,
+				7A91FB8820448EF80006B5EF /* DoubleNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
