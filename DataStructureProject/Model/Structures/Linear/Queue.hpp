@@ -88,7 +88,7 @@ Type Queue<Type> :: dequeue()
     
     Type returned = this->front->getData();
     
-    LinearNode<type> * removed = this->front;
+    LinearNode<Type> * removed = this->front;
     this->front = removed->getNextNode();
     
     delete removed;
