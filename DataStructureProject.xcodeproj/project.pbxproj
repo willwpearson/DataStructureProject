@@ -40,6 +40,7 @@
 		7A91FB8820448EF80006B5EF /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		7A91FB892044934C0006B5EF /* TestingStacksAndQueues.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestingStacksAndQueues.cpp; sourceTree = "<group>"; };
 		7A91FB8A2044934C0006B5EF /* TestingStacksAndQueues.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestingStacksAndQueues.hpp; sourceTree = "<group>"; };
+		7A91FB8C2044995C0006B5EF /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		7AA67266203F48ED00BD241A /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		7AA67267203F4E0000BD241A /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		7AD13D1F2022434900E3DDB4 /* DataStructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +186,7 @@
 				7AE38D3B203CA0C2001CE0A8 /* LinkedList.hpp */,
 				7AA67266203F48ED00BD241A /* Stack.hpp */,
 				7AA67267203F4E0000BD241A /* Queue.hpp */,
+				7A91FB8C2044995C0006B5EF /* CircularList.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
