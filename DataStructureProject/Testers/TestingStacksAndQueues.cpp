@@ -98,8 +98,14 @@ void TestingStacksAndQueues :: stackVersusQueue()
     
     for(int index = 0; index < 10; index ++)
     {
-        queueFromStack.enqueue(index);
-        stackFromQueue.push(index);
+        queue.enqueue(index);
+        stack.push(index);
+    }
+    
+    for(int index = 0; index < 10; index ++)
+    {
+        queueFromStack.enqueue(stack.pop());
+        stackFromQueue.push(queue.dequeue());
     }
     
     for(int index = 0; index < 10; index ++)
