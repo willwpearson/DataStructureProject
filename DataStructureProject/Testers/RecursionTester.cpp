@@ -63,5 +63,5 @@ void RecursionTester :: testRecursionString()
     cout << mystery("car") << endl;
     cout << mystery("apple") << endl;
     cout << recursiveMirror("hello") << endl;
-    cout << recursiveMirror("hehe") << endl;
+    cout << recursiveMirror("password") << endl;
 }
