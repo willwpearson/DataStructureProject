@@ -35,6 +35,18 @@ string RecursionTester :: mystery(string word)
     }
 }
 
+string RecursionTester :: recursiveMirror(string word)
+{
+    if (word.length() == 1)
+    {
+        return word;
+    }
+    else
+    {
+        return word + recursiveMirror(word.substr(word.length()/2, word.length() - 1));
+    }
+}
+
 void RecursionTester :: testRecursionNumbers()
 {
     Timer recursionTimer;
@@ -50,4 +62,6 @@ void RecursionTester :: testRecursionString()
     cout << mystery("X") << endl;
     cout << mystery("car") << endl;
     cout << mystery("apple") << endl;
+    cout << recursiveMirror("hello") << endl;
+    cout << recursiveMirror("hehe") << endl;
 }
