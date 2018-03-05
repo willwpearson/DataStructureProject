@@ -41,10 +41,14 @@ void Controller :: start()
 //    linkedTest.testListBasics();
 //    linkedTest.testListWithData();
     
-    TestingStacksAndQueues versusTest;
-    versusTest.stackVersusList();
-    versusTest.stackVersusQueue();
-    versusTest.queueVersusList();
+//    TestingStacksAndQueues versusTest;
+//    versusTest.stackVersusList();
+//    versusTest.stackVersusQueue();
+//    versusTest.queueVersusList();
+    
+    RecursionTester test;
+    test.testRecursionNumbers();
+    test.testRecursionString();
 }
 
 void Controller :: findMaxandMin()

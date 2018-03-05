@@ -10,12 +10,12 @@
 
 int RecursionTester :: fib(int number)
 {
-
+    return 0;
 }
 
 string RecursionTester :: mystery(string word)
 {
-    
+    return "";
 }
 
 void RecursionTester :: testRecursionNumbers()
