@@ -2,6 +2,8 @@
 //  Queue.h
 //  DataStructureProject
 //
+//  This code creates a data structure Queue, where objects are added only at the end, and only removed from the front.
+//
 //  Created by Pearson, William on 2/22/18.
 //  Copyright © 2018 CTEC. All rights reserved.
 //
