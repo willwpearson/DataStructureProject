@@ -46,9 +46,12 @@ void Controller :: start()
 //    versusTest.stackVersusQueue();
 //    versusTest.queueVersusList();
     
-    RecursionTester test;
-    test.testRecursionNumbers();
-    test.testRecursionString();
+//    RecursionTester test;
+//    test.testRecursionNumbers();
+//    test.testRecursionString();
+    
+    SortingTester test;
+    test.testSorts();
 }
 
 void Controller :: findMaxandMin()

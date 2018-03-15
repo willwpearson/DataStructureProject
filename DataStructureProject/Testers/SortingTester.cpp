@@ -51,13 +51,13 @@ void SortingTester :: testSorts()
     vector<CrimeData> data = FileController :: readCrimeDataToVector("/Users/wpea1865/Documents/C++ Projects/DataStructureProject/DataStructureProject/Data/crime.csv");
     vector<CrimeData> smaller;
     
-    for(int index = 0; index < 10000; index ++)
+    for(int index = 0; index < 100000; index ++)
     {
         smaller.push_back(data[index]);
     }
     
     sortTimer.startTimer();
-    quickSort(smaller, 0, smaller.size());
+    quickSort(data, 0, data.size());
     sortTimer.stopTimer();
     sortTimer.displayInformation();
     cout << "The number of swaps were: " << swapCount << endl;
