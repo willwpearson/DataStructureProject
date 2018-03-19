@@ -257,7 +257,6 @@ template <class Type>
 void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
     assert(vertex < currentGraph.size());
-    int cost = 0;
     bool visited[MAXIMUM];
     std::set<int> connections;
     std::set<int>::iterator setIterator;
@@ -276,8 +275,8 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
         {
             if(!visited[*setIterator])
             {
-                cost += weightCostMatrix[vertex][*setIterator];
                 visited[*setIterator] = true;
+                cout << currentGraph[*setIterator] << endl;
                 vertexQueue.push(*setIterator);
             }
         }
