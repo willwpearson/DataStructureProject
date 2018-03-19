@@ -9,7 +9,8 @@
       <w>670</w>
       <h>630</h>
     </coordinates>
-    <panel_attributes>NonLinear :: Graph
+    <panel_attributes>bg=black
+NonLinear :: Graph
 --
 *- MAXIMUM : int*
 - adjacencyMatrix : bool[][]
@@ -23,7 +24,7 @@ Graph() : constructor
 
 *Connect vertices*
 + addEdge(int source, int target);
-+addEdgeUndirected(int source, int target) : void
++ addEdgeUndirected(int source, int target) : void
 + addEdgeCost(int source, int target, int cost) : void
 
 *Disconnect vertices*

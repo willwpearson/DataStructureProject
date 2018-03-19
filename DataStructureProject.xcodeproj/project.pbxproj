@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A1E80D5206035F500FB8A4C /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		7A1E8459202A33A6007B6444 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		7A1E845A202A33A6007B6444 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		7A1E845D202A41CA007B6444 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 		7AA67265203F484F00BD241A /* NonLinear */ = {
 			isa = PBXGroup;
 			children = (
+				7A1E80D5206035F500FB8A4C /* Graph.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
