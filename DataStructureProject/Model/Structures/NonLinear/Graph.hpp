@@ -94,6 +94,46 @@ Type Graph<Type> :: operator[](int vertex) const
     return graphData[vertex];
 }
 
+template <class Type>
+void Graph<Type> :: addVertex(const Type& value)
+{
+    assert(vertexCount < MAXIMUM);
+    int newVertexNumber = vertexCount;
+    vertexCount++;
+    
+    for(int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
+    {
+        adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
+        adjacencyMatrix[newVertexNumber][otherVertexNumber] = false;
+    }
+    
+    graphData[newVertexNumber] = value;
+}
+
+template <class Type>
+void Graph<Type> :: removeEdge(int source, int target)
+{
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
+    adjacencyMatrix[source][target] = false;
+}
+
+template <class Type>
+void Graph<Type> :: removeEdgeUndirected(int source, int target)
+{
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
+    adjacencyMatrix[source][target] = false;
+    adjacencyMatrix[target][source] = false;
+}
+
+template <class Type>
+void Graph<Type> :: removeEdgeCost(int source, int target)
+{
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
+    weightCostMatrix[source][target] = 0;
+    weightCostMatrix[target][source] = 0;
+}
+
+template <class Type>
 
 
 #endif /* Graph_hpp */
