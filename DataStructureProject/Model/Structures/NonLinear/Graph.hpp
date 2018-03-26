@@ -25,7 +25,7 @@ private:
     int vertexCount;
     void depthFirstTraversal(Graph<Type> & graph, int vertex, bool markedVertices[]);
 public:
-    Graph()
+    Graph();
     
     //Graph Operations
     void addVertex(const Type& value);
@@ -33,7 +33,7 @@ public:
     //Connect vertices
     void addEdge(int source, int target);
     void addEdgeUndirected(int source, int target);
-    void addEdgeCost(int source, int target);
+    void addEdgeCost(int source, int target, int cost);
     //Disconnect vertices
     void removeEdge(int source, int target);
     void removeEdgeUndirected(int source, int target);

@@ -50,8 +50,11 @@ void Controller :: start()
 //    test.testRecursionNumbers();
 //    test.testRecursionString();
     
-    SortingTester test;
-    test.testSorts();
+//    SortingTester test;
+//    test.testSorts();
+    
+    GraphTester test;
+    test.testGraphs();
 }
 
 void Controller :: findMaxandMin()
