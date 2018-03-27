@@ -31,14 +31,56 @@ public:
     void setRightNode(BinaryTreeNode<Type> * right);
 };
 
+//Constructors
 template<class Type>
+BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
+{
+    this->root = nullptr;
+    this->left = nullptr;
+    this->right = nullptr;
+}
+
 template<class Type>
+BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
+{
+    this->root = nullptr;
+    this->left = nullptr;
+    this->right = nullptr;
+}
+
+//Accessor Methods
 template<class Type>
+void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * root)
+{
+    this->root = root;
+}
+
 template<class Type>
+void BinaryTreeNode<Type> :: setLeftNode(BinaryTreeNode<Type> * left)
+{
+    this->left = left;
+}
+
 template<class Type>
+void BinaryTreeNode<Type> :: setRightNode(BinaryTreeNode<Type> * right)
+{
+    this->right = right;
+}
+
 template<class Type>
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRoot()
+{
+    return root;
+}
 template<class Type>
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeft()
+{
+    return left;
+}
 template<class Type>
-template<class Type>
-template<class Type>
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRight()
+{
+    return right;
+    
+}
 #endif /* BinaryTreeNode_hpp */
