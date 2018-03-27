@@ -35,17 +35,17 @@ public:
 template<class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
 {
-    this->root = nullptr;
-    this->left = nullptr;
-    this->right = nullptr;
+    root = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 template<class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
 {
-    this->root = nullptr;
-    this->left = nullptr;
-    this->right = nullptr;
+    root = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 //Accessor Methods
@@ -70,17 +70,16 @@ void BinaryTreeNode<Type> :: setRightNode(BinaryTreeNode<Type> * right)
 template<class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRoot()
 {
-    return root;
+    return this->root;
 }
 template<class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeft()
 {
-    return left;
+    return this->left;
 }
 template<class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRight()
 {
-    return right;
-    
+    return this->right;
 }
 #endif /* BinaryTreeNode_hpp */
