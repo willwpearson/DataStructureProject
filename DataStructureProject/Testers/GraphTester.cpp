@@ -113,5 +113,6 @@ void GraphTester :: testGraphs()
 
 void GraphTester :: compareTraversals()
 {
-    
+    puzzle.depthFirstTraversal(puzzle, puzzle.size() - 1);
+    puzzle.breadthFirstTraversal(puzzle, 0);
 }
