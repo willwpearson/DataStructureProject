@@ -14,7 +14,7 @@
 using namespace std;
 
 template <class Type>
-class BinarySearchTree<Type> : public Tree<Type>
+class BinarySearchTree : public Tree<Type>
 {
 protected:
     //Recursive Information Helpers
@@ -42,7 +42,7 @@ public:
     BinaryTreeNode<Type> * getRoot();
     void setRoot(BinaryTreeNode<Type> * root);
     //Data Methods
-    void insert(Type);
+    void insert(Type itemToInsert);
     bool contains(Type);
     void remove(Type);
     Type findMinimum();
@@ -139,11 +139,11 @@ bool BinarySearchTree<Type> :: isComplete(BinaryTreeNode<Type> * startNode, int 
  Data Methods
  */
 template <class Type>
-void BinarySearchTree<Type> :: insert(Type)
+void BinarySearchTree<Type> :: insert(Type itemToInsert)
 {
     BinaryTreeNode<Type> * insertMe = new BinaryTreeNode<Type>(itemToInsert);
     BinaryTreeNode<Type> * previous = nullptr;
-    BinaryTreeNode<Type> * current = this-root;
+    BinaryTreeNode<Type> * current = this->root;
     
     if(current == nullptr)
     {
