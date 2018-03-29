@@ -62,11 +62,13 @@ BinarySearchTree<Type> :: BinarySearchTree()
 {
     this->root = nullptr;
 }
+
 template <class Type>
 BinarySearchTree<Type> :: ~BinarySearchTree()
 {
-    
+  
 }
+
 /*
  Informational Methods
  */
@@ -75,31 +77,37 @@ int BinarySearchTree<Type> :: getSize()
 {
     
 }
+
 template <class Type>
 int BinarySearchTree<Type> :: getHeight()
 {
     
 }
+
 template <class Type>
 bool BinarySearchTree<Type> :: isComplete()
 {
     
 }
+
 template <class Type>
 bool BinarySearchTree<Type> :: isBalanced()
 {
     
 }
+
 template <class Type>
 BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRoot()
 {
     
 }
+
 template <class Type>
 void BinarySearchTree<Type> :: setRoot(BinaryTreeNode<Type> * root)
 {
     
 }
+
 /*
  Recursive Information Helpers
  */
@@ -108,49 +116,96 @@ int BinarySearchTree<Type> :: calculateSize(BinaryTreeNode<Type> * startNode)
 {
     
 }
+
 template <class Type>
 int BinarySearchTree<Type> :: calculateHeight(BinaryTreeNode<Type> * startNode)
 {
     
 }
+
 template <class Type>
 bool BinarySearchTree<Type> :: isBalanced(BinaryTreeNode<Type> * startNode)
 {
     
 }
+
 template <class Type>
 bool BinarySearchTree<Type> :: isComplete(BinaryTreeNode<Type> * startNode, int index, int size)
 {
     
 }
+
 /*
  Data Methods
  */
 template <class Type>
 void BinarySearchTree<Type> :: insert(Type)
 {
+    BinaryTreeNode<Type> * insertMe = new BinaryTreeNode<Type>(itemToInsert);
+    BinaryTreeNode<Type> * previous = nullptr;
+    BinaryTreeNode<Type> * current = this-root;
     
+    if(current == nullptr)
+    {
+        this->root == insertMe;
+    }
+    else
+    {
+        while(current != nullptr)
+        {
+            previous = current;
+            if(itemToInsert < current->getData())
+            {
+                current = current->getLeftNode();
+            }
+            else if(itemToInsert > current->getData())
+            {
+                current = current->getRightNode();
+            }
+            else
+            {
+                cerr << "Item exists already - Exiting insert" << endl;
+                delete insertMe;
+                return;
+            }
+        }
+        
+        if(previous->getData() > itemToInsert)
+        {
+            previous->setLettNode(insertMe);
+        }
+        else
+        {
+            previous->setRightNode(insertMe);
+        }
+        insertMe->setRootNode(previous);
+    }
 }
+
 template <class Type>
 bool BinarySearchTree<Type> :: contains(Type)
 {
     
 }
+
 template <class Type>
 void BinarySearchTree<Type> :: remove(Type)
 {
     
 }
+
 template <class Type>
 Type BinarySearchTree<Type> :: findMinimum()
 {
     
 }
+
 template <class Type>
 Type BinarySearchTree<Type> :: findMaximum()
 {
     
 }
+
 /*
  Recursive Data Helpers
  */
@@ -159,6 +214,7 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
 {
     
 }
+
 /*
  Traversals
  */
@@ -167,21 +223,25 @@ void BinarySearchTree<Type> :: inOrderTraversal()
 {
     
 }
+
 template <class Type>
 void BinarySearchTree<Type> :: preOrderTraversal()
 {
     
 }
+
 template <class Type>
 void BinarySearchTree<Type> :: postOrderTraversal()
 {
     
 }
+
 template <class Type>
 void BinarySearchTree<Type> :: demoTraversalSteps(BinaryTreeNode<Type> * node)
 {
     
 }
+
 /*
  Recursive Traversal Helpers
  */
@@ -190,21 +250,25 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
 {
     
 }
+
 template <class Type>
 void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * preStart)
 {
     
 }
+
 template <class Type>
 void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * postStart)
 {
     
 }
+
 template <class Type>
 BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * current)
 {
     
 }
+
 template <class Type>
 BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * current)
 {
