@@ -53,8 +53,11 @@ void Controller :: start()
 //    SortingTester test;
 //    test.testSorts();
     
-    GraphTester test;
-    test.testGraphs();
+//    GraphTester test;
+//    test.testGraphs();
+    
+    BinaryTreeTester test;
+    test.doTreeStuff();
 }
 
 void Controller :: findMaxandMin()
