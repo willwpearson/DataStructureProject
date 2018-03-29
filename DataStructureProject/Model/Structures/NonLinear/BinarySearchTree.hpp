@@ -228,13 +228,13 @@ void BinarySearchTree<Type> :: inOrderTraversal()
 template <class Type>
 void BinarySearchTree<Type> :: preOrderTraversal()
 {
-    
+    preOrderTraversal(this->root);
 }
 
 template <class Type>
 void BinarySearchTree<Type> :: postOrderTraversal()
 {
-    
+    postOrderTraversal(this->root);
 }
 
 template <class Type>
@@ -244,7 +244,7 @@ void BinarySearchTree<Type> :: demoTraversalSteps(BinaryTreeNode<Type> * start)
     {
         cout << "check if left is here" << endl;
         demoTraversalSteps(start->getLeft());
-        cout << "return to root" << endl;
+        cout << "at root" << endl;
         cout << "check if right is here" << endl;
         demoTraversalSteps(start->getRight());
     }
@@ -277,13 +277,23 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
 template <class Type>
 void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * preStart)
 {
-    
+    if(preStart != nullptr)
+    {
+        cout << preStart->getData() << endl;
+        preOrderTraversal(preStart->getLeft());
+        preOrderTraversal(preStart->getRight());
+    }
 }
 
 template <class Type>
 void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * postStart)
 {
-    
+    if(postStart != nullptr)
+    {
+        postOrderTraversal(postStart->getLeft());
+        postOrderTraversal(postStart->getRight());
+        cout << postStart->getData() << endl;
+    }
 }
 
 template <class Type>
