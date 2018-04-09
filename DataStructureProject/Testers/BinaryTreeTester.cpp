@@ -10,19 +10,15 @@
 
 void BinaryTreeTester :: doTreeStuff()
 {
-    testTree.insert(3);
-    testTree.insert(1);
-    testTree.insert(2);
-    testTree.insert(-3246000);
-    testTree.insert(-12);
-    testTree.insert(7);
-    testTree.insert(5);
-    testTree.insert(6);
-    testTree.insert(8);
-    testTree.insert(5000);
-    testTree.insert(9001);
-    testTree.insert(10);
-    testTree.insert(600);
+    testTree.insert("Hi");
+    testTree.insert("Hello");
+    testTree.insert("Hola");
+    testTree.insert("Bonjour");
+    testTree.insert("Konichiwa");
+    testTree.insert("Ni Hao");
+    testTree.insert("Henlo");
+    testTree.insert("Hallo");
+    testTree.insert("Heyy");
     
     testTree.demo();
     testTree.inOrderTraversal();
