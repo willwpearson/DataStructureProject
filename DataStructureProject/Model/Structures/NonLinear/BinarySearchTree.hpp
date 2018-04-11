@@ -261,7 +261,56 @@ bool BinarySearchTree<Type> :: contains(Type itemToFind)
 template <class Type>
 void BinarySearchTree<Type> :: remove(Type getRidOfMe)
 {
-    
+    if(this->root == nullptr)
+    {
+        cout << "Empty tree so removal is not possible" << endl;
+    }
+    else
+    {
+        BinaryTreeNode<Type> * current = this->root;
+        BinaryTreeNode<Type> * previous = nullptr;
+        bool hasBeenFound = false;
+        
+        while(current != nullptr && !hasBeenFound)
+        {
+            if(current->getData() == getRidOfMe)
+            {
+                hasBeenFound = true;
+            }
+            else
+            {
+                previous = current;
+                if(getRidOfMe < current->getData())
+                {
+                    current = current->getLeft();
+                }
+                else
+                {
+                    current = current->getRight();
+                }
+            }
+        }
+        
+        if(current == nullptr)
+        {
+            cerr << "Item not found, removal unsuccessful" << endl;
+        }
+        else if(hasBeenFound)
+        {
+            if(current == this->root)
+            {
+                removeNode(this->root);
+            }
+            else if(getRidOfMe < previous->getData())
+            {
+                removeNode(previous->getLeft());
+            }
+            else
+            {
+                removeNode(previous->getRight());
+            }
+        }
+    }
 }
 
 template <class Type>
@@ -282,7 +331,94 @@ Type BinarySearchTree<Type> :: findMaximum()
 template <class Type>
 void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
 {
+    BinaryTreeNode<Type> * current;
+    BinaryTreeNode<Type> * previous;
+    BinaryTreeNode<Type> * temp;
     
+    previous = removeMe->getRoot();
+    
+    //Node is a leaf - has no kiddos
+    if(removeMe->getRight() == nullptr && removeMe-> getLeft() == nullptr)
+    {
+        temp = removeMe;
+        removeMe = nullptr;
+        
+        if(previous != nullptr && removeMe->getData() < previous->getData())
+        {
+            previous->setLeftNode(removeMe);
+        }
+        else if(previous != nullptr && removeMe->getData() > previous->getData())
+        {
+            previous->setRightNode(removeMe);
+        }
+        
+        delete temp;
+    }
+    //Node has only a left child
+    else if(removeMe->getRight() == nullptr)
+    {
+        temp = removeMe;
+        removeMe = removeMe->getLeft();
+        
+        if(previous != nullptr && temp->getData() < previous->getData())
+        {
+            previous->setLeftNode(removeMe);
+        }
+        else if(previous != nullptr && temp->getData() > previous->getData())
+        {
+            previous->setRightNode(removeMe);
+        }
+        
+        removeMe->setRootNode(previous);
+        
+        delete temp;
+    }
+    //Node has only a right child
+    else if(removeMe->getLeft() == nullptr)
+    {
+        temp = removeMe;
+        removeMe = removeMe->getRight();
+        
+        if(previous != nullptr && removeMe->getData() < previous->getData())
+        {
+            previous->setLeftNode(removeMe);
+        }
+        else if(previous != nullptr && removeMe->getData() > previous->getData())
+        {
+            previous->setRightNode(removeMe);
+        }
+        
+        removeMe->setRootNode(previous);
+        
+        delete temp;
+    }
+    //Node has both children
+    else
+    {
+        current = getRightMostChild(removeMe->getLeft());
+        
+        previous = current->getRoot();
+        removeMe->setData(current->getData());
+        
+        if(previous == nullptr)
+        {
+            removeMe->setLeftNode(current->getLeft());
+        }
+        else
+        {
+            previous->setRightNode(current->getLeft());
+        }
+        if(current->getLeft() != nullptr)
+        {
+            current->getLeft()->setRootNode(removeMe);
+        }
+        delete current;
+    }
+    
+    if(removeMe == nullptr || removeMe->getRoot() == nullptr)
+    {
+        this->root = removeMe;
+    }
 }
 
 /*
