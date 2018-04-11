@@ -35,6 +35,7 @@ public:
     //Structure
     BinarySearchTree();
     ~BinarySearchTree();
+    void destroyTree(BinaryTreeNode<Type> * node);
     //Informational Methods
     int getSize();
     int getHeight();
@@ -68,7 +69,18 @@ BinarySearchTree<Type> :: BinarySearchTree()
 template <class Type>
 BinarySearchTree<Type> :: ~BinarySearchTree()
 {
-  
+    destroyTree(this->root);
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: destroyTree(BinaryTreeNode<Type> * node)
+{
+    if(node != nullptr)
+    {
+        destroyTree(node->getLeft());
+        destroyTree(node->getRight());
+        delete node;
+    }
 }
 
 /*
@@ -108,13 +120,13 @@ bool BinarySearchTree<Type> :: isBalanced()
 template <class Type>
 BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRoot()
 {
-    
+    return this->root;
 }
 
 template <class Type>
 void BinarySearchTree<Type> :: setRoot(BinaryTreeNode<Type> * root)
 {
-    
+    this->root = root;
 }
 
 /*
@@ -507,8 +519,10 @@ template <class Type>
 BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * startingNode)
 {
     BinaryTreeNode<Type> * currentNode = startingNode;
+    BinaryTreeNode<Type> * previous = nullptr;
     while(currentNode != nullptr)
     {
+        previous = currentNode;
         currentNode = currentNode->getRight();
     }
     
@@ -519,8 +533,10 @@ template <class Type>
 BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * startingNode)
 {
     BinaryTreeNode<Type> * currentNode = startingNode;
+    BinaryTreeNode<Type> * previous = nullptr;
     while(currentNode != nullptr)
     {
+        previous = currentNode;
         currentNode = currentNode->getLeft();
     }
     
