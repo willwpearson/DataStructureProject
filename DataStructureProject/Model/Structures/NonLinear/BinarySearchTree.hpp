@@ -29,8 +29,8 @@ protected:
     void inOrderTraversal(BinaryTreeNode<Type> * inStart);
     void preOrderTraversal(BinaryTreeNode<Type> * preStart);
     void postOrderTraversal(BinaryTreeNode<Type> * postStart);
-    BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current);
-    BinaryTreeNode<Type> * getLeftMostChild(BinaryTreeNode<Type> * current);
+    BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * startingNode);
+    BinaryTreeNode<Type> * getLeftMostChild(BinaryTreeNode<Type> * startingNode);
 public:
     //Structure
     BinarySearchTree();
@@ -316,13 +316,15 @@ void BinarySearchTree<Type> :: remove(Type getRidOfMe)
 template <class Type>
 Type BinarySearchTree<Type> :: findMinimum()
 {
-    
+    assert(this->root != nullptr);
+    return getLeftMostChild(this->root)->getData();
 }
 
 template <class Type>
 Type BinarySearchTree<Type> :: findMaximum()
 {
-    
+    assert(this->root != nullptr);
+    return getRightMostChild(this->root)->getData();
 }
 
 /*
@@ -502,14 +504,26 @@ void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * postSta
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * current)
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * startingNode)
 {
+    BinaryTreeNode<Type> * currentNode = startingNode;
+    while(currentNode != nullptr)
+    {
+        currentNode = currentNode->getRight();
+    }
     
+    return currentNode;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * current)
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * startingNode)
 {
+    BinaryTreeNode<Type> * currentNode = startingNode;
+    while(currentNode != nullptr)
+    {
+        currentNode = currentNode->getLeft();
+    }
     
+    return currentNode;
 }
 #endif /* BinarySearchTree_hpp */
