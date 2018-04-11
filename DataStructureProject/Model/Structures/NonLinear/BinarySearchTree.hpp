@@ -44,8 +44,8 @@ public:
     void setRoot(BinaryTreeNode<Type> * root);
     //Data Methods
     void insert(Type itemToInsert);
-    bool contains(Type);
-    void remove(Type);
+    bool contains(Type itemToFind);
+    void remove(Type getRidOfMe);
     Type findMinimum();
     Type findMaximum();
     //Traversals
@@ -230,13 +230,36 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
 }
 
 template <class Type>
-bool BinarySearchTree<Type> :: contains(Type)
+bool BinarySearchTree<Type> :: contains(Type itemToFind)
 {
-    return false;
+    BinaryTreeNode<Type> * current = this->root;
+    if(current == nullptr)
+    {
+        return false;
+    }
+    else
+    {
+        while(current != nullptr)
+        {
+            if(itemToFind == current->getData())
+            {
+                return true;
+            }
+            else if(itemToFind < current->getData())
+            {
+                current = current->getLeft();
+            }
+            else
+            {
+                current = current->getRight();
+            }
+        }
+        return false;
+    }
 }
 
 template <class Type>
-void BinarySearchTree<Type> :: remove(Type)
+void BinarySearchTree<Type> :: remove(Type getRidOfMe)
 {
     
 }
