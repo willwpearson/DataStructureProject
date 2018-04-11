@@ -10,18 +10,36 @@
 
 void BinaryTreeTester :: doTreeStuff()
 {
-    testTree.insert("Hi");
-    testTree.insert("Hello");
-    testTree.insert("Hola");
-    testTree.insert("Bonjour");
-    testTree.insert("Konichiwa");
-    testTree.insert("Ni Hao");
-    testTree.insert("Henlo");
-    testTree.insert("Hallo");
-    testTree.insert("Heyy");
+    stringTree.insert("Hi");
+    stringTree.insert("Hello");
+    stringTree.insert("Hola");
+    stringTree.insert("Bonjour");
+    stringTree.insert("Konichiwa");
+    stringTree.insert("Ni Hao");
+    stringTree.insert("Henlo");
+    stringTree.insert("Hallo");
+    stringTree.insert("Heyy");
     
-    testTree.demo();
-    testTree.inOrderTraversal();
-    testTree.preOrderTraversal();
-    testTree.postOrderTraversal();
+    stringTree.demo();
+    stringTree.inOrderTraversal();
+    stringTree.preOrderTraversal();
+    stringTree.postOrderTraversal();
+    cout << stringTree.getHeight() << endl;
+    
+    
+    intTree.insert(1);
+    intTree.insert(2);
+    intTree.insert(3);
+    intTree.insert(71);
+    intTree.insert(12344);
+    intTree.insert(433);
+    intTree.insert(75634);
+    intTree.insert(34);
+    intTree.insert(43);
+    
+    intTree.demo();
+    intTree.inOrderTraversal();
+    intTree.preOrderTraversal();
+    intTree.postOrderTraversal();
+    cout << intTree.getHeight() << endl;
 }
