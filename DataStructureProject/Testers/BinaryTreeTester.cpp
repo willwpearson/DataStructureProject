@@ -24,7 +24,9 @@ void BinaryTreeTester :: doTreeStuff()
     stringTree.inOrderTraversal();
     stringTree.preOrderTraversal();
     stringTree.postOrderTraversal();
-    cout << stringTree.getHeight() << endl;
+    cout << "Height: " << stringTree.getHeight() << endl;
+    cout << stringTree.isBalanced() << endl;
+    cout << stringTree.isComplete() << endl;
     
     
     intTree.insert(1);
@@ -41,5 +43,7 @@ void BinaryTreeTester :: doTreeStuff()
     intTree.inOrderTraversal();
     intTree.preOrderTraversal();
     intTree.postOrderTraversal();
-    cout << intTree.getHeight() << endl;
+    cout << "Height: " << intTree.getHeight() << endl;
+    cout << intTree.isBalanced() << endl;
+    cout << intTree.isComplete() << endl;
 }
