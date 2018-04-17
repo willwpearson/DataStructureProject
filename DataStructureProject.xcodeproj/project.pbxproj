@@ -54,6 +54,7 @@
 		7A91FB8C2044995C0006B5EF /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		7AA67266203F48ED00BD241A /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		7AA67267203F4E0000BD241A /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		7ABF823B20866B4E0050128C /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		7AD13D1F2022434900E3DDB4 /* DataStructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD13D2A202243BF00E3DDB4 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		7AD13D2B202243BF00E3DDB4 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 				7A1E80D5206035F500FB8A4C /* Graph.hpp */,
 				7AD2AC5D206AD3F500B4F037 /* Tree.hpp */,
 				7AFD2177206D5E9E00571F1C /* BinarySearchTree.hpp */,
+				7ABF823B20866B4E0050128C /* AVLTree.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
