@@ -48,8 +48,29 @@ int AVLTree<Type> :: heightDifference(BinaryTreeNode<Type> * node)
 }
 
 template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: leftRotation(BinaryTreeNode<Type> * parent)
+{
+    BinaryTreeNode<Type> * changedNode;
+    changedNode = parent->getLeft();
+    
+    parent->setLeftChild(changedNode->getRight());
+    
+    changedNode->setRightChild(parent);
+    
+    return changedNode;
+}
 
-
-
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: rightRotation(BinaryTreeNode<Type> * parent)
+{
+    BinaryTreeNode<Type> * changedNode;
+    changedNode = parent->getRight();
+    
+    parent->setRightChild(changedNode->getLeft());
+    
+    changedNode->setLeftChild(parent);
+    
+    return changedNode;
+}
 
 #endif /* AVLTree_hpp */
