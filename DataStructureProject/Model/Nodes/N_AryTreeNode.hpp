@@ -32,4 +32,56 @@ public:
     void addChild(Type data);
 };
 
+template <class Type>
+N_AryTreeNode<Type> :: N_AryTreeNode()
+{
+    //Unused
+}
+
+template <class Type>
+N_AryTreeNode<Type> :: N_AryTreeNode(Type data) : Node<Type>(data)
+{
+    
+}
+
+template <class Type>
+N_AryTreeNode<Type> :: ~N_AryTreeNode()
+{
+    for(int index = nodes.size() - 1; index >= 0; index --)
+    {
+        delete nodes[index];
+    }
+}
+
+template <class Type>
+N_AryTreeNode<Type> * N_AryTreeNode<Type> :: getRoot()
+{
+    return root;
+}
+
+template <class Type>
+vector<N_AryTreeNode<Type>*> N_AryTreeNode<Type> :: getNodes()
+{
+    return nodes;
+}
+
+template <class Type>
+int N_AryTreeNode<Type> :: getChildCount()
+{
+    return nodes.size();
+}
+
+template <class Type>
+void N_AryTreeNode<Type> :: setRoot(N_AryTreeNode<Type> * root)
+{
+    this->root = root;
+}
+
+template <class Type>
+void N_AryTreeNode<Type> :: addChild(Type data)
+{
+    N_AryTreeNode<Type> * node = new N_AryTreeNode<Type>(data);
+    nodes.push_back(node);
+}
+
 #endif /* N_AryTreeNode_hpp */
