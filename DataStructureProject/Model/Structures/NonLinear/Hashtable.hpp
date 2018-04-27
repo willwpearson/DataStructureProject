@@ -52,7 +52,19 @@ Hashtable<Type> :: ~Hashtable()
 template <class Type>
 bool Hashtable<Type> :: isPrime(long current)
 {
-    
+    return false;
+}
+
+template <class Type>
+long Hashtable<Type> :: findPosition(HashNode<Type> * insert)
+{
+    return -1;
+}
+
+template <class Type>
+long Hashtable<Type> :: handleCollision(HashNode<Type> * current, long index)
+{
+    return -1;
 }
 
 #endif /* Hashtable_hpp */
