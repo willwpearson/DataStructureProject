@@ -74,6 +74,7 @@
 		7AE38D3B203CA0C2001CE0A8 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		7AE38D3D203CAEC1001CE0A8 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		7AE38D3E203CAEC1001CE0A8 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
+		7AE7145820939F5700EACE32 /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
 		7AFD2177206D5E9E00571F1C /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +118,7 @@
 				7A91FB8820448EF80006B5EF /* DoubleNode.hpp */,
 				7AD2AC59206ABF0300B4F037 /* BinaryTreeNode.hpp */,
 				7AC33A75208E50D1009D7D25 /* N_AryTreeNode.hpp */,
+				7AE7145820939F5700EACE32 /* HashNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
