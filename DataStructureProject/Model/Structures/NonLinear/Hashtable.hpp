@@ -34,5 +34,25 @@ public:
     long getSize();
 };
 
+template <class Type>
+Hashtable<Type> :: Hashtable()
+{
+    capacity = 101;
+    internalStorage = new HashNode<Type>*[capacity];
+    size = 0;
+    loadFactor = .80;
+}
+
+template <class Type>
+Hashtable<Type> :: ~Hashtable()
+{
+    delete [] internalStorage;
+}
+
+template <class Type>
+bool Hashtable<Type> :: isPrime(long current)
+{
+    
+}
 
 #endif /* Hashtable_hpp */
