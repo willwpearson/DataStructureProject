@@ -67,4 +67,29 @@ long Hashtable<Type> :: handleCollision(HashNode<Type> * current, long index)
     return -1;
 }
 
+template <class Type>
+long Hashtable<Type> :: getSize()
+{
+    return -1;
+}
+
+template <class Type>
+long Hashtable<Type> :: getNextPrime()
+{
+    return -1;
+}
+
+
+template <class Type>
+void Hashtable<Type> :: resize()
+{
+    
+}
+
+template <class Type>
+void Hashtable<Type> :: insert(Type value)
+{
+    
+}
+
 #endif /* Hashtable_hpp */
