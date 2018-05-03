@@ -58,12 +58,28 @@ bool Hashtable<Type> :: isPrime(long current)
 template <class Type>
 long Hashtable<Type> :: findPosition(HashNode<Type> * insert)
 {
-    return -1;
+    long insertPosition = insert->getKey() %  this->capacity;
+    return insertPosition;
 }
 
 template <class Type>
-long Hashtable<Type> :: handleCollision(HashNode<Type> * current, long index)
+long Hashtable<Type> :: handleCollision(long currentPosition)
 {
+    long shift = 17;
+    
+    for(long position = currentPosition + shift; position != currentPosition; position += shift)
+    {
+        if(position >= capacity)
+        {
+            position = position % capacity;
+        }
+        
+        if(internalStorage[position] == nullptr)
+        {
+            return position;
+        }
+    }
+    
     return -1;
 }
 
