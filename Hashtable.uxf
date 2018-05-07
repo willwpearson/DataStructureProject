@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>180</y>
+      <w>370</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+DataStructureProject.Model.Nodes :: Node
+# data : Type
+--
+
++ Node()  : constructor
++ Node(Type data) : constructor
++ setData(Type data) : void
++ getData() : Type</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>190</y>
+      <w>400</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>bg=green
+DataStructureProject.Model.Nodes :: HashNode
+--
+- key : long
+--
+
++ HashNode()  : constructor
++ HashNode(Type data) : constructor
++ getKey() const : long</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>240</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>430</y>
+      <w>460</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>bg=red
+DataStructureProject.Model.Structures.NonLinear :: Hashtable
+--
+- internalStorage : HashNode&lt;Type&gt; **
+- size : long
+- capacity : long
+- loadFactor : double
+--
+- getNextPrime() : long
+- isPrime(long current) : bool
+- resize() : void
+- findPosition(HashNode&lt;Type&gt; * insertedNode) : long
+- handleCollision(long currentPosition) : long
++ Hashtable() : constructor
++ ~Hashtable() : destructor
++ insert(Type data) : void
++ getSize() : long
++ get(long index) : HashNode&lt;Type&gt; *
++ contains(HashNode&lt;Type&gt; * value) : bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>670</x>
+      <y>300</y>
+      <w>30</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
