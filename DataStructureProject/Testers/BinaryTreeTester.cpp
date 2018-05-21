@@ -20,7 +20,7 @@ void BinaryTreeTester :: doTreeStuff()
     stringTree.insert("Hallo");
     stringTree.insert("Heyy");
     
-    stringTree.demo();
+//    stringTree.demo();
     stringTree.inOrderTraversal();
     stringTree.preOrderTraversal();
     stringTree.postOrderTraversal();
@@ -28,6 +28,7 @@ void BinaryTreeTester :: doTreeStuff()
     cout << stringTree.isBalanced() << endl;
     cout << stringTree.isComplete() << endl;
     
+    cout << "Int Tree" << endl;
     
     intTree.insert(1);
     intTree.insert(2);
@@ -39,7 +40,7 @@ void BinaryTreeTester :: doTreeStuff()
     intTree.insert(34);
     intTree.insert(43);
     
-    intTree.demo();
+//    intTree.demo();
     intTree.inOrderTraversal();
     intTree.preOrderTraversal();
     intTree.postOrderTraversal();

@@ -109,10 +109,37 @@ void GraphTester :: testGraphs()
 {
     setup();
     compareTraversals();
+    findCheapestTraversal();
 }
 
 void GraphTester :: compareTraversals()
 {
-    puzzle.depthFirstTraversal(puzzle, puzzle.size() - 1);
+    puzzle.depthFirstTraversal(puzzle, 0);
     puzzle.breadthFirstTraversal(puzzle, 0);
+}
+
+void GraphTester :: findCheapestTraversal()
+{
+    int highest = 0;
+    int highIndex = 0;
+    int lowest = 10000000;
+    int lowIndex = 0;
+    
+    for(int i = 0; i < puzzle.size(); i++)
+    {
+        int cost = puzzle.costTraversal(puzzle, i);
+        
+        if(cost > highest)
+        {
+            highest = cost;
+            highIndex = i;
+        }
+        if(cost < lowest)
+        {
+            lowest = cost;
+            lowIndex = i;
+        }
+    }
+    cout << "highest: " << highest << " and index at: " << highIndex << endl;
+    cout << "lowest: " << lowest << " and index at: " << lowIndex << endl;
 }
